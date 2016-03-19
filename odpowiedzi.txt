@@ -1,0 +1,16 @@
+1. (2ptk) Co to jest propagacja eventów? Jakie znasz typy propagacji? Czym się od siebie różnią?
+
+Propagacja eventow jest to przekazanie konkretnego wydarzenia w gore drzewa elementu na ktorym to wydarzenie zostalo wywolane.(metoda bubbling)
+Sa 2 metody: capturing oraz obecnie uzywana bubbling.
+Capturing:przekazuje odrotnie czyli w dół drzewa.
+Bubbling: przekazuje w gore drzewa.
+
+
+2. 2. (1ptk) Wytłumacz dlaczego powinniśmy kod JavaScript umieszczać w następującym bloku kodu:
+  ```
+  document.addEventListener('DOMContentLoaded', function () {
+    ... js code goes here...
+  }
+
+Obiekt - "document" jest naszą stroną i przez kod powyzej łączymy sie z nią aby miec mozliwosc jej pelnej kontroli, edycji itp.
+ Caly kod JS powinien byc wpisany wlasnie do tego Eventu. Event DOM zostanie uruchomiony dopiero po zaladowaniu calej strony.
